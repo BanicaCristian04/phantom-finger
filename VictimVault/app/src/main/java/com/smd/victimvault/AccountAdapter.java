@@ -62,7 +62,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHold
         TextView tvUsername;
         TextView tvCode;
         TextView tvInitial;
-        CircularProgressIndicator pbCountdown; // Added
+        CircularProgressIndicator pbCountdown;
 
         ViewHolder(View view) {
             super(view);
@@ -70,7 +70,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHold
             tvUsername = view.findViewById(R.id.tv_username);
             tvCode = view.findViewById(R.id.tv_code);
             tvInitial = view.findViewById(R.id.tv_initial);
-            pbCountdown = view.findViewById(R.id.pb_countdown); // Bound
+            pbCountdown = view.findViewById(R.id.pb_countdown);
         }
     }
 }

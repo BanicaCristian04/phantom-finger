@@ -45,16 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 int secondsLeft = (int) (30 - (currentSecond % 30));
 
                 if (secondsLeft == 30) {
-                    // Time is up! Generate new codes.
                     for (TotpAccount account : accounts) {
                         account.regenerateCode();
                     }
-                    // Reset the timer visually
                     adapter.updateProgress(30);
-                    // Do a full redraw ONLY when the numbers actually change
                     adapter.notifyItemRangeChanged(0, accounts.size());
                 } else {
-                    // Otherwise, just tick down the rings smoothly
                     adapter.updateProgress(secondsLeft);
                 }
 
