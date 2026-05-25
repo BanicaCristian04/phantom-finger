@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedResources">>
+    <style name="Theme.VictimVault" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#37474F</item>
+        <item name="colorPrimaryDark">#263238</item>
+        <item name="colorAccent">#009688</item>
+        <item name="android:statusBarColor">#263238</item>
+    </style>
+</resources>
